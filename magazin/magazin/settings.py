@@ -94,8 +94,11 @@ WSGI_APPLICATION = 'magazin.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'dmitrygorbachev$magazin',
+        'USER': 'dmitrygorbachev',
+        'PASSWORD': 'programmer123',
+        'HOST': 'dmitrygorbachev.mysql.pythonanywhere-services.com',
     }
 }
 
